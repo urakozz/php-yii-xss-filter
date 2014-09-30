@@ -7,7 +7,9 @@ Yii XSS Filter
 Для фильтрации используются регулярные выражения из фреймворка Kohana версии 2.3.4
 
 ```php
-  @example
+  /**
+   * @example
+   **/
   public function filters()
   {
     return array(
