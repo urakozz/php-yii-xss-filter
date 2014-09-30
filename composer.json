@@ -1,0 +1,35 @@
+{
+  "name": "kozz/yii-xss-filter",
+  "description": "Yii XSS Filter",
+  "keywords": ["Yii", "Filter", "Xss", "YiiXss"],
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Opeykin A."
+    },
+    {
+      "name": "Yury Kozyrev"
+    }
+  ],
+  "autoload": {
+    "classmap": [
+      "lib/"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Kozz\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "yiisoft/yii": "~1.1",
+    "php":">=5.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.0",
+    "phpunit/phpunit-story": "*",
+    "phpunit/phpunit-selenium":"*",
+    "phpunit/dbunit":"*",
+    "phpunit/php-invoker":"*"
+  }
+}
