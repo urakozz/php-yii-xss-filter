@@ -4,3 +4,11 @@ protected/runtime/*
 !protected/runtime/.gitignore
 protected/data/*.db
 themes/classic/views/
+
+.buildpath
+.settings
+.project
+.idea/
+build/
+vendor/
+composer.lock
