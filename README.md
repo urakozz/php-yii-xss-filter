@@ -14,7 +14,7 @@ Yii XSS Filter
   {
     return array(
       array(
-        'application.filters.XssFilter',
+        'XssFilter',
         'clean'   => '*',
         'tags'    => 'strict',
         'actions' => 'all'
