@@ -12,8 +12,6 @@ before_script:
   - composer install --dev --no-interaction
   - mkdir -p build/logs
 
-after_script:
-  - php vendor/bin/coveralls -v
 
 notifications:
    email: false
