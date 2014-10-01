@@ -76,11 +76,11 @@ class YXssFilter extends CFilter
 
 
     $dataForClean = explode(',',$this->clean);
-    if(count($dataForClean))
+    if(!empty($dataForClean))
     {
       foreach ($dataForClean as $key => $value)
       {
-        if(isset ($data[$value]) && count($data[$value]))
+        if(isset ($data[$value]) && !empty($data[$value]))
         {
           $this->doXssClean($data[$value]);
         }
@@ -99,7 +99,7 @@ class YXssFilter extends CFilter
 
   private function doXssClean(&$data)
   {
-    if(is_array($data) && count($data))
+    if(is_array($data) && !empty($data))
     {
       foreach($data as $k => $v)
       {
